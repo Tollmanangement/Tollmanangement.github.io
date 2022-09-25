@@ -9,15 +9,15 @@
     <script src="toll.js"></script>
 </head>
 <body>
+  <form>
     Toll mangement application
   <hr>
-    <form>
   <div id="tablepress-1" style="display:block; padding:25px;">
     <ul class="table-control">
       <li class="C-item">Toll entries/vehicle entries</li>
       <li class="C-item">
         
-        <select type="search" id="tablefilter" class="select-table-filter" data-table="order-table" required>
+        <select type="search" id="tablefilter" class="select-table-filter" data-table="order-table">
                <option value="">ALL</option>  
                <option value="Kappalur">Kappalur</option>  
                <option value="Chengalpattu">Chengalpattu</option>  
@@ -27,7 +27,7 @@
       <li class="C-item">
         <div class="icon-wrapper">
         
-        <input type="search" id="search-vehicle" class="light-table-filter" data-table="order-table" placeholder="Search vehicle" required />
+        <input type="search" id="search-vehicle" class="light-table-filter" data-table="order-table" placeholder="Search vehicle" />
         
       </div>
       </li>
@@ -70,7 +70,7 @@
 <div id="map-1" style="display:none;padding:25px;">
   <ul class="table-control">
       <li class="C-item">Tollgate List </li>
-      <li class="C-item"><input type="search" class="light-table-filter" id="search-toll" placeholder="Search a toll" required/></li>
+      <li class="C-item"><input type="search" class="light-table-filter" id="search-toll" placeholder="Search a toll" /></li>
     </ul>
     <ul class="table-control">
 
@@ -112,7 +112,7 @@
              <option value="">Select vehicle type</option>  
              <option value="Car/Jeep/Van">Car/Jeep/Van</option>  
             </select><input class="inp-toll" id="f-select-sin" type="number" placeholder=" Single Journey" required><input class="inp-toll" id="f-select-return" type="number" placeholder=" Return Journey"  required><br>
-  <select class="toll-entry" id="s-select">
+  <select class="toll-entry" id="s-select" required>
     <option value="">Select vehicle type</option>
              <option value="LCV">LCV</option>  
             </select><input class="inp-toll" id="s-select-sin" type="number" placeholder=" Single Journey" required><input class="inp-toll" id="s-select-return" type="number" placeholder=" Return Journey"  required><br>
@@ -157,6 +157,6 @@ Tariff*<br>
 </div>
 </div>
 </div>
-    </form>
+</form>
 </body>
 </html>
